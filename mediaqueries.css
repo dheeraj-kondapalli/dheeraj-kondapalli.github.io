@@ -26,6 +26,7 @@
   #profile,
   .section-container {
     display: block;
+    margin-top: 8%;
   }
   .arrow {
     display: none;
@@ -47,13 +48,14 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   #contact,
   footer {
     height: 40vh;
   }
   #profile {
     height: 83vh;
+    margin-top: 20%;
     margin-bottom: 0;
   }
   article {
@@ -80,6 +82,8 @@
   }
   .logo {
     font-size: 1.5rem;
+    top: 6vh;
+    left: 4vb;
   }
   .nav-links {
     flex-direction: column;

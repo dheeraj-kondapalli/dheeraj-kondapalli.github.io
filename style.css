@@ -34,11 +34,13 @@ nav,
 }
 
 nav {
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 17vh;
 }
-
+.nav-div{
+  margin-right: 5%;
+}
 .nav-links {
   gap: 2rem;
   list-style: none;
@@ -60,8 +62,20 @@ a:hover {
 
 .logo {
   font-size: 2rem;
+  font-weight: 500;
+  position: fixed;
+  top: 5vh;
+  left: 8vb;
+  color: rgb(200, 30, 30);
 }
 
+.logo span{
+  color: black;
+}
+
+.space{
+  width: 150px;
+}
 .logo:hover {
   cursor: default;
 }
@@ -70,11 +84,20 @@ a:hover {
 
 #hamburger-nav {
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  z-index: 1000;
 }
-
+.logo span{
+  color: black;
+}
 .hamburger-menu {
-  position: relative;
+  position: fixed;
   display: inline-block;
+  right: 6vb;
 }
 
 .hamburger-icon {
@@ -101,7 +124,6 @@ a:hover {
   width: fit-content;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3 ease-in-out;
 }
 
 .menu-links a {
@@ -179,6 +201,10 @@ section {
 .section__text {
   align-self: center;
   text-align: center;
+}
+
+.section__text span{
+  color: rgb(200, 30, 30);
 }
 
 .section__text p {
